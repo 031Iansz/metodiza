@@ -8,6 +8,7 @@ const cardIconSize = 25;
 export default function Home() {
     return (
         <div className="min-h-screen text-text-primary">
+
             <div className="grid grid-cols-2 h-screen border-b border-text-muted/25">
                 <div className="flex flex-col justify-center items-center bg-surface">
                     <div>
@@ -47,13 +48,14 @@ export default function Home() {
                         </div>
                     </div>
                 </div>
-                <div className="flex justify-center items-center">
+                <div className="flex justify-center items-center ">
                     <div>
                         <Image
                             src={"/svg/metodiza.svg"}
                             alt="logo"
                             width={logoSize}
                             height={logoSize}
+                            className="transition-transform duration-250 hover:scale-110 cursor-pointer"
                         />
                         <p className="text-center text-[#D23579] font-bold text-4xl mt-5 text-shadow-[4px_4px] text-shadow-black">
                             Metodiza
@@ -62,7 +64,7 @@ export default function Home() {
                 </div>
             </div>
             <div className="py-10 bg-surface">
-                <div className="w-full px-52 flex justify-around">
+                <div className="w-full px-52 flex justify-around space-x-6" >
                     <div className="overview-card">
                         <PenSquare size={cardIconSize} className="my-auto" />
                         <p className="text-xl leading-8">
@@ -72,7 +74,7 @@ export default function Home() {
                     </div>
                     <div className="overview-card">
                         <Clock size={cardIconSize} className="my-auto" />
-                        <p className="text-xl leading-8">
+                        <p className="text-xl leading-8 " >
                             Organize seu tempo Faça a sua rotina Planeje seus
                             estudos
                         </p>
@@ -83,6 +85,40 @@ export default function Home() {
                             Decida a forma na qual você irá aplicar seus
                             conhecimentos
                         </p>
+                    </div>
+                </div>
+            </div>
+            <div className="py-10 bg-surface">
+                <div className="ml-15 mt-10">
+                    <div className="flex">
+
+                        <div className="mb-2">
+                            <h2 className="text-[#35C0D2] font-bold text-4xl mb-2 ">Pomodiza  </h2>
+                            <p className="text-xl">
+                                Dê resumo de estudos à criação de mapas-<br></br>
+                                mentais e projetos, com ferramentas <br></br>
+                                essenciais da nossa plataforma.
+                            </p>
+                            <p className="text-xl " >
+                                A Técnica Pomodoro é uma estratégia <br></br>
+                                simples para melhorar seu foco e sua<br></br>
+                                produtividade. Ela divide seu tempo em <br></br>
+                                blocos de trabalho focado, intercalados <br></br>
+                                com pequenas pausas, ajudando você a,<br></br>
+                                manter a concentração por mais tempo.
+                            </p>
+
+                        </div>
+                        <div>
+                            <Image
+                                src="/svg/pomoduro.jpg"
+                                alt="po"
+                                width={300}
+                                height={300}
+                                className="transition-transform duration-300 hover:scale-130 cursor-pointer"
+                            />
+                        </div>
+
                     </div>
                 </div>
             </div>
